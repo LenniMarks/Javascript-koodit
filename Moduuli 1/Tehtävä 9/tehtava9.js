@@ -1,3 +1,4 @@
+'use strict';
 const numero = parseInt(prompt('Type number: '));
 let primary = true;
 

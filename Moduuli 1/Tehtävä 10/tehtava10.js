@@ -1,3 +1,4 @@
+'use strict';
 const nopat = parseInt(prompt("Type number of dices: "))
 const summa = parseInt(prompt("Type sum of dices: "))
 const testien_maara = 10000;
