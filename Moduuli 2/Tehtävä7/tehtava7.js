@@ -1,7 +1,6 @@
 'use strict';
 let lista = []
-var result = 0
-
+let roll = true
 const side = parseInt(prompt("Type side of the dice: "));
 
 
@@ -9,20 +8,11 @@ function diceroll () {
     return Math.floor(Math.random() * side) + 1;
 }
 
-while (result < side) {
+while (roll == true) {
     let rolled = diceroll()
-    console.log(rolled)
-    result = result + rolled
-    if (result < side) {
-        lista.push(result)
-    }
-    else if (result > side) {
-        result = result - rolled
-        lista.push(result)
-    }
-    else if(result == side){
-        lista.push(result)
-        break
+    lista.push(rolled)
+    if(rolled == side){
+        roll = false
     }
 }
 
