@@ -119,7 +119,7 @@ picArray.forEach(function (item) {
   articleImage.alt = item.title;
 
   const figCaption = document.createElement("figcaption");
-  figCaption.textContent = item.imageCaption;
+  figCaption.textContent = item.caption;
 
   const description = document.createElement("p");
   description.textContent = item.description;
