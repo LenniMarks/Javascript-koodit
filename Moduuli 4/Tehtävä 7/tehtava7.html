@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Esimerkki 4</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css"
+      rel="stylesheet"
+    />
+    <script src="tehtava7.js" defer></script>
+  </head>
+  <body>
+    <form id="address-form" action="http://api.digitransit.fi/geocoding/v1/search">
+        <input id="address" name="q" type="text">
+        <input type="submit" value="Search">
+      </form>
+    <h1>Bussi/juna/yms reitti kartalle</h1>
+    <div id="map" style="width: 100%; height: 400px"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="polyline.encoded.js"></script>
+  </body>
+</html>
